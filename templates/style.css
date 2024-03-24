@@ -1,0 +1,68 @@
+body {
+
+    background: #fff !important;
+    font-family: 'Poppins', sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: #1a1e21;
+  }
+  
+  .section-title h2 {
+    text-shadow: 1px 1px 2px #404040;
+  }
+  
+  /*****************************
+      NavBar
+  ******************************/
+  header nav {
+    background: #fff;
+    box-shadow: 0px 0px 5px #4444;
+  }
+  header nav a.navbar-brand h2 {
+  
+    color: var(--bs-orange);
+  }
+  header nav ul.action-menu .nav-item .nav-link {
+    margin: 0px 20px;
+    font-size: 18px;
+    
+  }
+  .navbar-toggler {
+    outline: none!important;
+    outline-color: transparent!important;
+    padding: none!important;
+    border: none!important;
+    border-radius: none!important;
+    
+  }
+  /* login person button on navbar*/
+  
+  .log-bt{
+    background-color:  #404040;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 50px;
+  
+  /* black border of nav border manual*/
+  
+  }
+  .navbar-nav::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    
+    transform: translate(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #404040;
+    
+    
+  
+  }
+  
+  @media(max-width: 567px){
+    
+  }
+  
+  
