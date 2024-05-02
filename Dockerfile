@@ -19,5 +19,4 @@ ENV FLASK_APP=app.py
 # Expose the port on which the Flask app will run
 EXPOSE 5000
 
-# Run the Flask app
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD ["gunicorn", "-b", ":5000", "app:app"]
