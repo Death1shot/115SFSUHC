@@ -37,86 +37,73 @@
     <!--navbar start-->
     {% include "nav.html" %}
 
-    <!--nav bar end-->
-    <!-- Hero Section -->
-    <header class="jumbotron jumbotron-fluid text-center">
-        <div class="container">
-            <h1 class="display-4">Secure File Sharing via Hybrid Cloud Cryptography</h1>
-            <p class="lead">Protect sensitive data with encryption at rest and in transit. Our platform guarantees constant security for peace of mind.</p>
-        </div>
-    </header>
-    <!--hero section end-->
+        <!--nav bar end-->
+        <!-- Hero Section -->
+        
 
-    <!--middle section start-->
-    <section id="about" class="py-5 bg-light">
-        <div class="container">
+        <header class="jumbotron jumbotron-fluid text-center bg-gray" style="border: 1px solid black;background-image: url({{ url_for('static', filename='img4.jpeg') }}); background-size: cover;  margin-bottom: 0;">
+            <div class="text-center" style="padding-left: 20px;color:white">
+                <h1 class="display-4">Secure File Sharing via Hybrid Cloud Cryptography</h1>
+                <p class="lead">Protect sensitive data with encryption at rest and in transit. Our platform guarantees constant security for peace of mind.</p>
+            </div>
+        </header>
+
+
+        
+        <section 
+            class="jumbotron jumbotron-fluid text-center bg-gray" style="border: 1px solid black;background-image: url({{ url_for('static', filename='img4.jpeg') }}); background-size: cover;  margin-bottom: 0;">
             <div class="row">
-                <div class="col-md-6">
-                    <h2>About Us</h2>
-                    <p>Wanderlust Adventures is a leading travel agency dedicated to providing exceptional travel
-                        experiences. We specialize in crafting personalized itineraries that cater to the unique
-                        interests and preferences of our clients.</p>
-                    <p>With our team of experienced travel experts and extensive network of partners worldwide, we
-                        guarantee seamless journeys and unforgettable adventures.</p><a href="about.html"
-                        class="text-primary">Read more..</a></p>
+                <div class="col-md-6 text-left" style="padding-left: 20px;color:white">
+                    <h1 class="display-4" style="padding-left: 20px">Why Choose Our Secure File Sharing Platform?</h1>
+                    <p class="lead" style="padding-left: 20px">Our platform is designed to provide secure and flexible file sharing solutions that seamlessly integrate with your workflow. With our platform, you can protect your sensitive data, collaborate with team members and clients efficiently, and receive full customer support.</p><br>
+                    <a href="/about" style="padding-left: 20px" class="text-primary">Read more..</a>
                 </div>
                 <div class="col-md-6">
-                    <img src="eagle.webp" class="img-fluid" alt="About Us Image">
+                    <img src="static\enifno.jpeg" style="padding-right:25px;padding-bottom:50px;height:auto;width:500px" class="img-fluid" alt="About Us Image">
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="about" class="py-5 bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 mx-auto text-center text-white">
-                    <h2>About Chef's Delight</h2>
-                    <p>Chef's Delight is your ultimate destination for discovering mouthwatering recipes, cooking tips,
-                        and culinary inspirations. Whether you're a seasoned chef or a novice cook, our platform offers
-                        a wide range of recipes suitable for every taste and occasion.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Recipes Section -->
-    <section id="recipes" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Featured Recipes</h2>
-            <div class="row ">
-                <div class="col-lg-4 col-md-6 mb-4 ">
-                    <div class="card">
-                        <img src="eagle.webp" class="card-img-top" alt="Recipe 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Recipe 1</h5>
-                            <p class="card-text">Description of recipe 1.</p>
-                            <a href="#" class="btn btn-primary">View Recipe</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <img src="eagle.webp" class="card-img-top" alt="Recipe 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Recipe 2</h5>
-                            <p class="card-text">Description of recipe 2.</p>
-                            <a href="#" class="btn btn-primary">View Recipe</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <img src="eagle.webp" class="card-img-top" alt="Recipe 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Recipe 3</h5>
-                            <p class="card-text">Description of recipe 3.</p>
-                            <a href="#" class="btn btn-primary">View Recipe</a>
-                        </div>
-                    </div>
-                </div>
+
+        <section class="jumbotron jumbotron-fluid text-center bg-gray" style="border: 1px solid black;background-image: url({{ url_for('static', filename='img4.jpeg') }}); background-size: cover;  margin-bottom: 0;">
+            <div class="text-center" style="padding-left: 20px;color:white">
+                <h1 class="display-4">Secure Your Data with Confidence</h1>
+                <p>We are a team of experts dedicated to making sure your sensitive data is always secure. We use hybrid cloud cryptography to ensure that your data is encrypted at rest and in transit. Our platform guarantees constant security, giving you peace of mind.</p>
             </div>
-        </div>
-    </section>
+        </section>
+
+
+        <section style="background-image: url({{ url_for('static', filename='img3.jpeg') }}); background-size: cover;">    
+            <div class="card-deck" style="padding-left: 200px;padding-right: 200px; padding-top:50px;color:white;padding-bottom:50px">
+                <!-- Big Card 1 -->
+                <div class="card big-card" style="background-color: black;opacity:70%;">
+                    <img src="static\w1.jpeg" class="card-img-top" alt="Recipe 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Easy to Use and Accessible Anywhere</h5>
+                        <p class="card-text">Our secure file sharing platform is designed to be easy to use and accessible from anywhere. Whether you're in the office or on the go, you can securely access and share your files without any hassle</p>
+                            
+                    </div>
+                </div>
+                <!-- Big Card 2 -->
+                <div class="card big-card" style="background-color: black; opacity:70%">
+                    <img src="static\w2.jpeg" class="card-img-top" alt="Beach Exploration">
+                    <div class="card-body">
+                        <h5 class="card-title">Top-Notch Security and Compliance</h5>
+                        <p class="card-text">We take security and compliance seriously. Our platform is designed to meet the highest security standards and comply with all regulations. You can trust us to keep your data safe and secure.</p>
+                    </div>
+                </div>
+                <!-- Big Card 3 -->
+                
+                <div class="card big-card" style="background-color: black; opacity:70%">
+                    <img src="static\w3.jpeg" class="card-img-top" alt="Beach Exploration">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Versatile for Any Business</h5>
+                        <p class="card-text">Our platform is versatile and can be tailored to meet the needs of any business. Whether you're a small startup or a large corporation, we have a solution that will work for you.</p>
+                    </div>
+                </div>
+
+            </div>
 
 
 

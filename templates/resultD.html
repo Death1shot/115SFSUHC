@@ -31,12 +31,37 @@
 }
 </style>
 <body>
-    
+    {% include "nav.html" %}
+    <br>
+        <header class="jumbotron jumbotron-fluid text-center bg-gray" style="border: 1px solid black;background-image: url({{ url_for('static', filename='img4.jpeg') }}); background-size: cover;  margin-bottom: 0;margin-top:-50px;">
+            <div class="text-center" style="padding-left: 20px;color:white;margin-top:50px">
+                <br>
 
-<center> <h1> Thank You For Using Our Service!!! Your File Is Processed Successfully: </h1>
-<a href="{{url_for('return_files_data')}}" target="blank"><button class='btn btn-danger'>Download File!</button></a>
-<!-- <a href="{{url_for('return_files_data')}}" download>Click here</a> -->
-</center>
+                <h1 class="display-4" >Secure File Sharing via Hybrid Cloud Cryptography - Download </h1>
+                <br>
+
+                <img src="{{ url_for('static', filename='thx.png') }}" class="card-img-top img-fluid" alt="Responsive image" style="padding-top:10px;width:500px; height:500px; max-width: 100%; max-height: 100%;">
+                <p class="lead">
+                </p>
+            </div>
+            <br>
+
+            <center>
+
+                <h1> Download Your File!!  Processed Is Done Successfully: </h1>
+                <br>
+
+                <a href="{{url_for('return_files_data')}}" target="blank">
+                    <button class='btn btn-danger' style="padding: 15px 30px; font-size: 20px;padding-bottom:20px">Download File!</button>
+                    <br>
+                </a>
+                <br><br>
+                <!-- <a href="{{url_for('return_files_data')}}" download>Click here</a> -->
+            </center>
+        </header>
+        <br>
+        
+    {% include "topbar.html" %}
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

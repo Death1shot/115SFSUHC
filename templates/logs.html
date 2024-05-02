@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logs</title>
+</head>
+<body>
+    <h1>Access Logs</h1>
+    <ul>
+        {% for log in logs %}
+            <li>{{ log.timestamp }}: {{ log.username }} {{ log.action }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
