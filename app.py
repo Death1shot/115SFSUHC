@@ -112,41 +112,6 @@ def Empty():
 def home():
   return render_template('home.html')
 
-
-
-
-
-# @app.route('/login', methods=['GET', 'POST'])
-# def login():
-#     if request.method == 'POST':
-#         username = request.form['username']
-#         password = request.form['password']
-#         if is_valid_credentials(username, password):
-#             # session['username'] = username
-#             return redirect(url_for('Empty'))
-#         else:
-#             return render_template('login.html', error='Invalid username or password')
-#     return render_template('login.html')
-
-# @app.route('/register', methods=['GET', 'POST'])
-# def register():
-#     if request.method == 'POST':
-#         username = request.form['username']
-#         password = request.form['password']
-        
-#         # Hash the password
-#         hashed_password = generate_password_hash(password)
-#         # Check if the user already exists
-#         existing_user = users_collection.find_one({'username': username})
-#         if existing_user is None:
-#             # Store the hashed password in the database
-#             users_collection.insert_one({'username': username, 'password': hashed_password})
-            
-#             return render_template('login.html')
-#         else:
-#             return render_template('register.html', error='Username already exists')
-#     return render_template('register.html')
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
   form = LoginForm()
@@ -162,25 +127,6 @@ def login():
     # If form is not valid, print the form errors
     print(form.errors)
   return render_template('login.html', form=form)
-
-
-# @app.route('/register', methods=['GET', 'POST'])
-# def register():
-#     form = RegistrationForm()
-#     if form.validate_on_submit():
-#         username = form.username.data
-#         password = form.password.data
-
-#         # Hash the password
-#         hashed_password = generate_password_hash(password)
-#         # Check if the user already exists
-#         existing_user = users_collection.find_one({'username': username})
-#         if existing_user is None:
-#             users_collection.insert_one({'username': username, 'password': hashed_password})
-#             return redirect(url_for('login'))
-#         else:
-#             return render_template('register.html', form=form, error='Username already exists')
-#     return render_template('register.html', form=form)
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -271,40 +217,6 @@ def upload_file():
     return start()
 
   return render_template('Invalid.html')
-
-# @app.route('/data/', methods=['GET', 'POST'])
-
-# def upload_file():
-#   if request.method == 'POST':
-#     if 'file' not in request.files:
-#       return render_template('Nofile.html')
-#     file = request.files['file']
-#     if file.filename == '':
-#       return render_template('Nofile.html')
-#     if file and allowed_file(file.filename):
-#       filename = secure_filename(file.filename)
-#       file.save(os.path.join(app.config['UPLOAD_FOLDER'], 'Original.txt'))
-#       return start()
-       
-#     return render_template('Invalid.html')
-
-# @app.route('/data/', methods=['GET', 'POST'])
-# def upload_file():
-#   if request.method == 'POST':
-
-
-#     if 'file' not in request.files:
-#       return render_template('Nofile.html')
-#     file = request.files['file']
-#     if file.filename == '':
-#       return render_template('Nofile.html')
-#     if file and allowed_file(file.filename):
-#       filename = secure_filename(file.filename)
-#       file.save(os.path.join(app.config['UPLOAD_FOLDER'], 'Original.txt'))
-#       return start()
-
-#   return render_template('Invalid.html')
-  
 
     
 if __name__ == '__main__':
